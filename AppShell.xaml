@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiCTiPar.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiCTiPar"
+    FlyoutBackgroundColor="#236F90"
+    Shell.FlyoutBehavior="Flyout">
+    
+    <FlyoutItem Title="Start" Icon="start.png">
+        <ShellContent Route="MainPage" ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Come with me" Icon="sources.png">
+        <ShellContent Route="SourcesPage" ContentTemplate="{DataTemplate local:ComeWithMe}" />
+    </FlyoutItem>
+</Shell>
